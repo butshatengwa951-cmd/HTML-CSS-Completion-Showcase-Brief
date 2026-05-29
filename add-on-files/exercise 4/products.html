@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Xbox Game Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --xbox-green: #107C10;
+            --xbox-green-dark: #0e6a0e;
+            --xbox-green-light: #13A813;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #1a1a1a !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .navbar-brand {
+            color: var(--xbox-green) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            color: var(--xbox-green-light) !important;
+            transform: translateY(-1px);
+        }
+
+        .nav-link {
+            color: #e0e0e0 !important;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--xbox-green) !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: var(--xbox-green);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 80%;
+            left: 10%;
+        }
+
+        .alert-xbox {
+            background: linear-gradient(90deg, var(--xbox-green-dark), var(--xbox-green));
+            color: white;
+            border: none;
+            border-radius: 0;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+            border-bottom: 3px solid var(--xbox-green);
+        }
+
+        .card {
+            background: #1e1e1e;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(16, 124, 16, 0.3);
+            border-color: var(--xbox-green);
+        }
+
+        .card-img-top {
+            transition: transform 0.5s ease;
+            height: 200px;
+            object-fit: cover;
+            border-image-slice: fill;    
+            }
+
+        .card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .card-text.price {
+            color: var(--xbox-green);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .btn-xbox {
+            background-color: var(--xbox-green);
+            border-color: var(--xbox-green);
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-xbox:hover {
+            background-color: var(--xbox-green-light);
+            border-color: var(--xbox-green-light);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 124, 16, 0.4);
+        }
+
+        .btn-xbox:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            border-top: 3px solid var(--xbox-green);
+        }
+
+        .navbar-toggler {
+            border-color: var(--xbox-green);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2816, 124, 16, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div class="alert alert-xbox text-center m-0 py-2" role="alert">
+        <strong>All games available for digital download</strong>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-xbox me-2" viewBox="0 0 16 16">
+                    <path d="M7.202 15.967a8 8 0 0 1-3.552-1.26l-.563-.356a.5.5 0 0 1 .055-.898l.53-.302c.18-.103.34-.223.47-.354.57-.57 1.377-1.353 2.077-1.927l.42-.34a.5.5 0 0 1 .737.067c.26.38.52.794.77 1.245c.53.95 1.022 2.11 1.438 3.11c.11.26.05.53-.12.71l-.48.347c-.17.122-.36.21-.56.26zm7.59-9.759c0.15.33 0.28.661 0.39 1.004a7.7 7.7 0 0 1 .39 2.44c0 .87-.1 1.722-.3 2.535a9.8 9.8 0 0 1-2.016 3.705a.5.5 0 0 1-.75-.03l-1.12-1.38a.5.5 0 0 1 .07-.7l1.85-1.4a.5.5 0 0 0 .19-.51l-.87-3.22a.5.5 0 0 0-.63-.33l-1.55.5a.5.5 0 0 1-.47-.06l-.88-.62a.5.5 0 0 1-.02-.82l1.2-.85a.5.5 0 0 1 .73.1l.67.96a.5.5 0 0 0 .65.2l2.16-.72a.5.5 0 0 1 .57.36zm-7.64 2.52l-1.11.67a.5.5 0 0 0-.16.69l.38.58a.5.5 0 0 0 .7.17l1.77-1.06a.5.5 0 0 0 .2-.66l-.36-.66a.5.5 0 0 0-.67-.19l-1.49.94a.5.5 0 0 0 .04.72zM8.5 1.003a8 8 0 0 0-6.473 3.14l-.42.58a.5.5 0 0 0 .14.69l2.54 1.7a.5.5 0 0 0 .64-.06l.52-.48a.5.5 0 0 1 .74.06l.83 1.14a.5.5 0 0 0 .78.04l1.55-1.69a.5.5 0 0 0 .02-.71l-.58-.52a.5.5 0 0 1 .23-.84l2.07-.72a.5.5 0 0 1 .62.31l.22.73c0.09.31.17.621.24.937a8.3 8.3 0 0 0-.97-3.963A8 8 0 0 0 8.5 1.003"/>
+                </svg>
+                Game Store
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="products.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3" data-aos="fade-down">Xbox Game Collection</h1>
+            <p class="lead text-secondary" data-aos="fade-up" data-aos-delay="100">Discover the latest and greatest games for your console</p>
+        </div>
+    </header>
+
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100" data-aos="zoom-in" data-aos-delay="0">
+                        <img src="https://i.ibb.co/nssbTkLR/Xue-K9-WNwd7-Kv5-XAfpvrf-AH.jpg" alt="Xue-K9-WNwd7-Kv5-XAfpvrf-AH" border="0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Halo Infinite</h5>
+                            <p class="card-text price mb-4">$59.99</p>
+                            <button class="btn btn-xbox mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://i.ibb.co/xKrgMNLR/capsule-616x353-2.jpg" alt="capsule 616x353 (2)" border="0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Forza Horizon 5</h5>
+                            <p class="card-text price mb-4">$59.99</p>
+                            <button class="btn btn-xbox mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://i.ibb.co/HT5bXK9z/capsule-616x353-1.jpg" alt="capsule 616x353 (1)" border="0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Starfield</h5>
+                            <p class="card-text price mb-4">$69.99</p>
+                            <button class="btn btn-xbox mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" data-aos="zoom-in" data-aos-delay="300">
+                       <img src="https://i.ibb.co/27CDkYrW/EGS-Cyberpunk2077-CDPROJEKTRED-S1-03-2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7.jpg" alt="EGS-Cyberpunk2077-CDPROJEKTRED-S1-03-2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7" border="0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cyberpunk 2077</h5>
+                            <p class="card-text price mb-4">$49.99</p>
+                            <button class="btn btn-xbox mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="https://i.ibb.co/8RY5yxp/capsule-616x353.jpg" alt="capsule 616x353" border="0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Elden Ring</h5>
+                            <p class="card-text price mb-4">$59.99</p>
+                            <button class="btn btn-xbox mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" data-aos="zoom-in" data-aos-delay="500">
+                       <img src="https://i.ibb.co/bjn5W434/64ea9f0e-6c8f-44f9-8866-429edbad9784.jpg" alt="64ea9f0e-6c8f-44f9-8866-429edbad9784" border="0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Call of Duty MW3</h5>
+                            <p class="card-text price mb-4">$69.99</p>
+                            <button class="btn btn-xbox mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://i.ibb.co/Wv71489D/pxwb2u9dy0gf1.jpg" alt="pxwb2u9dy0gf1" border="0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">FIFA 26</h5>
+                            <p class="card-text price mb-4">$69.99</p>
+                            <button class="btn btn-xbox mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" data-aos="zoom-in" data-aos-delay="700">
+                     <img src="https://i.ibb.co/jkRMdtdC/a4defb730333cc78c28f27f47b7d654f8353be50b0dc8050.avif" alt="a4defb730333cc78c28f27f47b7d654f8353be50b0dc8050" border="0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Minecraft</h5>
+                            <p class="card-text price mb-4">$29.99</p>
+                            <button class="btn btn-xbox mt-auto w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0">&copy; 2024 Xbox Game Store. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-secondary">Powered by Xbox Cloud Gaming</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+</html>

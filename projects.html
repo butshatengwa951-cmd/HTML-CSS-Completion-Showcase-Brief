@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects and learning journey - Nature-themed retrospective portfolio showcasing web development work and education">
+    <meta name="author" content="Your Name">
+    <title>Projects | My first Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <!-- Site Header with Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">My Journey</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <h1>My Projects</h1>
+        <p class="subtitle">A look at my journey through design and development</p>
+
+        <!-- Projects Section with CSS Grid -->
+        <section class="projects-section">
+            <h2 class="section-heading">Featured Work</h2>
+            <div class="projects-grid">
+                
+                <!-- Project Card 1: Xbox game store -->
+                <article class="project-card">
+                    <!-- Simple SVG Icon - Leaf -->
+                    <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--forest-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                    <h3>Xbox Game Store</h3>
+                    <p>A responsive e-commerce website for purchasing and managing Xbox games. Built with HTML, CSS, and JavaScript, featuring a modern design and seamless user experience.</p>
+                    <a href="./add-on-files/exercise 4/index.html" class="project-link">View Project</a>
+                </article>
+
+                <!-- Project Card 2: Marvel Catalogues -->
+                <article class="project-card">
+                    <!-- Simple SVG Icon - Flower -->
+                    <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--sunset-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+                    </svg>
+                    <h3>Marvel Catalogues</h3>
+                    <p>A comprehensive database of Marvel characters and storylines. Built with HTML, CSS, and JavaScript, featuring a dynamic search functionality and responsive design.</p>
+                    <a href="./add-on-files/products/products.html" class="project-link">View Project</a>
+                </article>
+
+                <!-- Project Card 3: Gallery -->
+                <article class="project-card">
+                    <!-- Simple SVG Icon - Mountain -->
+                    <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--earth-brown)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                    </svg>
+                    <h3>Gallery</h3>
+                    <p>A showcase of a beautiful collection of photographs, organized by theme and location. Built with HTML, CSS, and JavaScript, featuring a responsive grid layout and lightbox functionality.</p>
+                    <a href="./add-on-files/gallery.html/gallery.html" class="project-link">View Project</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Education & Learning Journey Section -->
+        <section class="education-section">
+            <h2 class="section-heading">Education & Learning Journey</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Course / Program</th>
+                            <th scope="col">Skills Learned</th>
+                            <th scope="col">Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction to Web Development</td>
+                            <td>HTML5 Semantic Elements, CSS Fundamentals, Responsive Design Principles</td>
+                            <td class="year-cell">2026</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced CSS & Layout</td>
+                            <td>CSS Grid, Flexbox, Animations, Custom Properties, Sass Architecture</td>
+                            <td class="year-cell">2026</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript for Modern Web</td>
+                            <td>ES6+ Features, DOM Manipulation, Async/Await, API Integration, Module Patterns</td>
+                            <td class="year-cell">2026</td>
+                        </tr>
+                        <tr>
+                            <td>Python for Web Development</td>
+                            <td>Python Basics, Flask Framework, Database Integration, RESTful APIs</td>
+                            <td class="year-cell">2026</td>
+                        </tr>
+                        <tr>
+                            <td>Performance & Optimization</td>
+                            <td>Core Web Vitals, Image Optimization, Lazy Loading, Build Tools, Lighthouse Audits</td>
+                            <td class="year-cell">2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer>
+       
+    </footer>
+<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for a retrospective nature-themed photography portfolio. Get in touch for collaborations and inquiries.">
+    <meta name="author" content="Nature Portfolio">
+    <title>Contact | My first Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Site Header with Navigation -->
+    <header>
+        <nav>
+            <a href="./index.html" class="logo">Hello!</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="section-header">
+                <h1>Get In Touch</h1>
+                <p>Have questions or want to collaborate? Or if you just want to say hello! Reach out through the form below or via my contact details.</p>
+            </div>
+
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send a Message</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="youremail@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                   
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-wrapper">
+                    <h2>Contact Information</h2>
+                    <ul class="contact-info-list">
+                        <li>
+                            <span class="info-label">Email</span>
+                            <span class="info-value">
+                                <a href="mailto:butshatengwa951@gmail.com">butshatengwa951@gmail.com</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="info-label">Phone</span>
+                            <span class="info-value">
+                                <a href="tel:+1234567890">(+27) 63 428 5174</a>
+                            </span>
+                        </li>
+                    
+                        <li>
+                            <span class="info-label">Social</span>
+                            <span class="info-value">
+                                <a href="https://github.com/butshatengwa951-cmd" target="_blank" rel="noopener noreferrer">GitHub</a> · 
+                                <a href="https://www.linkedin.com/in/butsha-tengwa-66378a313/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </span>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer>
+        
+    </footer>
+<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
+</body>
+</html>

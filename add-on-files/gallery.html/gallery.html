@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Gallery</h1>
+      
+      <!-- Flexbox for filter buttons -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+        <button class="filter-btn" data-filter="portraits">Portraits</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+      </div>
+    </header>
+
+    <!-- Grid for main gallery layout -->
+    <main class="gallery">
+      
+      <article class="card" data-category="landscapes">
+        <div class="card-image">
+          <img src="https://i.ibb.co/F4jQFXK5/bled-slovenia-sunrise-water-reflection-iconic-lake-bled-autumn-colors-bled-slovenia-sunrise-water-re.webp" alt="bled-slovenia-sunrise-water-reflection-iconic-lake-bled-autumn-colors-bled-slovenia-sunrise-water-re" border="0">
+          <div class="overlay">
+            <p>Sunrise over a calm alpine lake surrounded by peaks.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Alpine Lake</h3>
+          <span class="tag">Landscapes</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="portraits">
+        <div class="card-image">
+          <img src="https://picsum.photos/id/65/800/600" alt="Portrait">
+          <div class="overlay">
+            <p>Natural light portrait with soft background blur.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Golden Hour</h3>
+          <span class="tag">Portraits</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="architecture">
+        <div class="card-image">
+          <img src="https://i.ibb.co/XZyKX0hd/Torre-de-cristal-Madrid.jpg" alt="Torre-de-cristal-Madrid" border="0">
+          <div class="overlay">
+            <p>The Torre de Cristal (Spanish for Glass Tower) is a skyscraper in the Cuatro Torres Business Area (CTBA) in Madrid, Spain. Built between 2004 and 2008, the tower stands at 249 m (817 ft) tall with 52 floors and is the current tallest building in Spain, as well as the fifth-tallest in the European Union.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Torre de Cristal</h3>
+          <span class="tag">Architecture</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="landscapes">
+        <div class="card-image">
+          <img src="https://i.ibb.co/qLWH4yN8/photo-1506452305024-9d3f02d1c9b5.avif" alt="photo-1506452305024-9d3f02d1c9b5" border="0">
+          <div class="overlay">
+            <p>Mist rolling through an ancient redwood forest.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Mist Forest</h3>
+          <span class="tag">Landscapes</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="portraits">
+        <div class="card-image">
+          <img src="https://i.ibb.co/TBGBqsN9/360-F-793360457-vws9kji-Bp-Kt-Rq9u-Hec-ZPGBq4-BYA6g9-Pf.jpg" alt="360-F-793360457-vws9kji-Bp-Kt-Rq9u-Hec-ZPGBq4-BYA6g9-Pf" border="0">
+          <div class="overlay">
+            <p>In stark black and white, a single luminous eye commands attention. Light carves across freckled skin and clinging strands of hair, while shadows pool in the corners of the frame. The sharp detail of the iris holds you in place, balancing intimacy with distance. Here, softness and severity meet in quiet tension.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Contrast</h3>
+          <span class="tag">Portraits</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="architecture">
+        <div class="card-image">
+          <img src="https://i.ibb.co/bjxs80jk/360-F-255020588-fd-SFI6-YRJLj-Epe-LRtw8-G7-MZmz-Qlc-FVxl.jpg" alt="360 F 255020588 fd SFI6YRJLj Epe LRtw8G7MZmz Qlc FVxl" border="0">
+          <div class="overlay">
+            <p>International Orange towers rise from the bay, linked by sweeping suspension cables that trace a clean catenary against twilight. The bridge’s Art Deco engineering is laid bare: riveted steel, rhythmic vertical suspenders, and a deck that cuts a single, luminous line across water. Long-exposure traffic turns to a ribbon of light, emphasizing the span’s function as conduit and landmark. Between sea and sky, the structure balances mass with elegance, anchoring the landscape through form and color.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Golden Gate Bridge</h3>
+          <span class="tag">Architecture</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="landscapes">
+        <div class="card-image">
+          <img src="https://i.ibb.co/zWcSnSW8/istockphoto-473796794-612x612.jpg" alt="istockphoto 473796794 612x612" border="0">
+          <div class="overlay">
+            <p>Rolling dunes stretch to the horizon, their curves shaped by wind into soft, unbroken lines. Light traces each crest while shadow pools in the troughs, turning sand into a study of volume and rhythm. The rippled surface reveals constant motion within apparent stillness. Here, the landscape becomes architecture without walls: pure geometry, carved by time and weather.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Desert Dunes</h3>
+          <span class="tag">Landscapes</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="portraits">
+        <div class="card-image">
+          <img src="https://i.ibb.co/F4d0vTJP/stree.jpg" alt="stree" border="0">
+          <div class="overlay">
+            <p>Candid street portrait in monochrome.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Street Face</h3>
+          <span class="tag">Portraits</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="architecture">
+        <div class="card-image">
+         <img src="https://i.ibb.co/0j7VBhY2/Black-Residence-Spiral-scaled.jpg" alt="Black-Residence-Spiral-scaled" border="0">
+          <div class="overlay">
+            <p>Anchored by a solid central column, this oak spiral staircase fuses craft with geometry. Cantilevered treads sweep upward in a continuous curve, while turned balusters and a robust newel nod to traditional joinery. Warm wood and clean lines turn pure function into architectural sculpture.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Spiral Staircase</h3>
+          <span class="tag">Architecture</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="landscapes">
+        <div class="card-image">
+          <img src="https://i.ibb.co/tPMmZnT8/photo0jpg.jpg" alt="photo0jpg" border="0">
+          <div class="overlay">
+            <p>Tucked between walls of dense evergreens, the waterfall reveals itself in a rush of white. Water tumbles down stepped rock, framed by pine and shadow, as if the forest kept it secret until now. Sunlit mist hangs in the narrow corridor, and the stream below races over stone toward the viewer. The composition feels discovered rather than staged: wild, enclosed, and quietly monumental.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Hidden Falls</h3>
+          <span class="tag">Landscapes</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="portraits">
+        <div class="card-image">
+          <img src="https://i.ibb.co/9mWFHXCf/da-tinker.jpg" alt="da tinker" border="0">
+          <div class="overlay">
+            <p>The Thinker (French: Le Penseur), by Auguste Rodin, is a bronze sculpture depicting a nude male figure of heroic size, seated on a large rock, leaning forward, his right elbow placed upon his left thigh, with the back of his right hand supporting his chin in a posture evocative of deep thought and contemplation. This universally recognized expression of "deep thought" has made the sculpture one of the most widely known artworks in the world. It has become the iconic symbol of thinking; images of the sculpture in profile are often used to indicate philosophy and other practices of contemplation or introspection.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>The Thinker</h3>
+          <span class="tag">Portraits</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="architecture">
+        <div class="card-image">
+          <img src="https://i.ibb.co/RkSdNx7Y/Mid-century-modern-pitched-roof.jpg" alt="Mid-century-modern-pitched-roof" border="0">
+          <div class="overlay">
+            <p>A dramatic A-frame roof projects outward on exposed beams, creating a deep overhang that blurs structure with shade. Floor to ceiling glass walls dissolve the boundary between interior and landscape, while slender steel posts keep the frame light. The architecture defers to the mature oak, letting the tree pierce the canopy and share the roofline. Warm wood, clean geometry, and honest materials capture mid-century modernism’s balance of shelter and openness.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Mid-Century Home</h3>
+          <span class="tag">Architecture</span>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.classList.toggle('hide', !match);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
