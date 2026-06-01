@@ -64,8 +64,8 @@ This site serves as my professional home base for:
 ## Screenshots
 **Desktop View**
 
-images\Screenshot 2026-06-01 110048.png
->>>>>>> 43ff29610e1f9a532963c2fbbb46e55bb1fb241b
+[images\Screenshot 2026-06-01 110048.png
+>>>>>>> 43ff29610e1f9a532963c2fbbb46e55bb1fb241b](https://github.com/butshatengwa951-cmd/HTML-CSS-Completion-Showcase-Brief/blob/b1b700a42e9373f947e891ce4fc457495a1ecf7e/images/Screenshot%202026-06-01%20110048.png)
 *Home page with hero section, nature palette, and opacity overlays*
 
 **Mobile View**
