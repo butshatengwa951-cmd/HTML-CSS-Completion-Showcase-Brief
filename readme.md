@@ -64,7 +64,8 @@ This site serves as my professional home base for:
 ## Screenshots
 **Desktop View**
 
-![alt text](<Screenshot 2026-06-01 110048-1.png>)
+<img width="1920" height="1080" alt="Screenshot 2026-06-01 110048" src="https://github.com/user-attachments/assets/939e2555-6b0c-4b1a-bd86-17d0c388c777" />
+
 *Home page with hero section, nature palette, and opacity overlays*
 
 **Mobile View**
