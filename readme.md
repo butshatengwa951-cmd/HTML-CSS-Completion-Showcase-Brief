@@ -63,7 +63,7 @@ This site serves as my professional home base for:
 
 ## Screenshots
 **Desktop View**
-![Desktop screenshot of home page](screenshots/desktop-home.png)
+Desktop\HTML-CSS-Completion-Showcase-Brief\images\Screenshot 2026-06-01 110048.png
 *Home page with hero section, nature palette, and opacity overlays*
 
 **Mobile View**
