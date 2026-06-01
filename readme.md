@@ -71,7 +71,9 @@ This site serves as my professional home base for:
 *Home page with hero section, nature palette, and opacity overlays*
 
 **Mobile View**
-images\Screenshot 2026-06-01 112338.png
+
+<img width="355" height="750" alt="Screenshot 2026-06-01 112338" src="https://github.com/user-attachments/assets/5821ccde-eb05-41af-8682-4cfe3f7d0818" />
+
 *Responsive project cards stacking on mobile*
 
 
