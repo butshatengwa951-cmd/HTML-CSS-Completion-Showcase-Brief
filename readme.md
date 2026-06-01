@@ -63,13 +63,11 @@ This site serves as my professional home base for:
 
 ## Screenshots
 **Desktop View**
-
-images\Screenshot 2026-06-01 110048.png
->>>>>>> 43ff29610e1f9a532963c2fbbb46e55bb1fb241b
+![alt text](<Screenshot 2026-06-01 110048.png>)
 *Home page with hero section, nature palette, and opacity overlays*
 
 **Mobile View**
-images\Screenshot 2026-06-01 112338.png
+![alt text](<Screenshot 2026-06-01 112338.png>)
 *Responsive project cards stacking on mobile*
 
 
@@ -108,4 +106,3 @@ butshatengwa951@gmail.com | https://www.linkedin.com/in/butsha-tengwa-66378a313/
 📂 **Repository**: https://github.com/butshatengwa951-cmd/HTML-CSS-Completion-Showcase-Brief.git
 
 ---
-*Built as part of [Course/Program Name] - Week [X] Assignment*
