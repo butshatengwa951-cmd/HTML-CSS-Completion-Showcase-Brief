@@ -68,6 +68,7 @@ This site serves as my professional home base for:
 *Home page with hero section, nature palette, and opacity overlays*
 
 **Mobile View**
+
 ![alt text](<Screenshot 2026-06-01 112338-1.png>)
 
 *Responsive project cards stacking on mobile*
