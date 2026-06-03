@@ -5,10 +5,10 @@
       */
 :root {
   --moss-green: 122, 132, 80;
-  --river-stone: 140, 140, 125;
   --bark-brown: 110, 92, 75;
   --morning-mist: 216, 213, 206;
   --clay: 166, 110, 75;
+  --leaf-light: 168, 196, 168;
   --font-serif: "Georgia", "Times New Roman", serif;
   --font-sans: "Helvetica Neue", Arial, sans-serif;
 }
@@ -53,15 +53,19 @@ body {
 
 /* Header and Navigation */
 header {
-  background: rgba(var(--moss-green), 0.85);
-  backdrop-filter: blur(8px);
-  border-bottom: 2px solid rgba(var(--bark-brown), 0.2);
+  background: linear-gradient(
+    135deg,
+    var(--forest-green) 0%,
+    var(--moss-green) 100%
+  );
+  color: var(--cream);
+  
+  box-shadow: 0 4px 12px var(--shadow);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 20px rgba(var(--bark-brown), 0.1);
+  backdrop-filter: opacity(8px);
 }
-
 nav {
   max-width: 1200px;
   margin: 0 auto;
@@ -92,7 +96,11 @@ nav {
   background: rgba(var(--clay), 0.6);
   border-radius: 100px;
 }
-
+.logo svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--leaf-light);
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -118,7 +126,7 @@ nav a::before {
   transform: translateX(-50%) scaleX(0);
   width: 100%;
   height: 1px;
-  background: rgba(var(--clay), 1);
+  background: var(--leaf-light);
   transition: transform 0.3s ease;
 }
 
@@ -129,9 +137,12 @@ nav a:focus::before {
 
 nav a:hover,
 nav a:focus {
-  color: rgba(255, 255, 255, 1);
+  color: var(--leaf-light);
 }
-
+nav a.active {
+  color: var(--leaf-light);
+  font-weight: 600;
+}
 /* Main Content */
 main {
   flex: 1;
@@ -349,76 +360,7 @@ body {
 }
 
 /* Header & Navigation */
-header {
-  background: linear-gradient(
-    135deg,
-    var(--forest-green) 0%,
-    var(--moss-green) 100%
-  );
-  color: var(--cream);
-  padding: 1.5rem 0;
-  box-shadow: 0 4px 12px var(--shadow);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.logo svg {
-  width: 32px;
-  height: 32px;
-  fill: var(--leaf-light);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: var(--cream);
-  text-decoration: none;
-  font-size: 1.05rem;
-  transition: all 0.3s ease;
-  padding: 0.5rem 0;
-  position: relative;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--leaf-light);
-  transition: width 0.3s ease;
-}
-
-nav a:hover::after,
-nav a:focus::after {
-  width: 100%;
-}
-
-nav a:hover,
-nav a:focus {
-  color: var(--leaf-light);
-}
-
-nav a.active {
-  color: var(--leaf-light);
-  font-weight: 600;
-}
 
 /* Main Content */
 main {
